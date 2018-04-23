@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        tools:ignore="UselessParent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/widget_ml" >
+
+            <TextView
+                android:id="@+id/dialog_tv_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/app_exit_prompt"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tv_size_high" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/gray_border" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+			<Button
+                android:id="@+id/dialog_btn_cancel"
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/button_high"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:text="@string/cancel"
+                android:textColor="@color/blue_normal"
+                android:textSize="@dimen/tv_size_high" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="@dimen/button_high"
+                android:background="@color/gray_border" />
+            <Button
+                android:id="@+id/dialog_btn_ok"
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/button_high"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                android:text="@string/determine"
+                android:textColor="@color/blue_normal"
+                android:textSize="@dimen/tv_size_high" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

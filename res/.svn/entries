@@ -1,0 +1,85 @@
+8
+
+dir
+118
+https://172.16.31.122/svn/WondersPay-Android/branches/source-eclipse/developers-zbw-chakan/res
+https://172.16.31.122/svn/WondersPay-Android
+
+
+
+2016-05-26T09:17:25.749451Z
+117
+zhangbowen
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+ccab8fb8-b3c6-e44b-b722-937c6cf4e6c0
+
+anim
+dir
+
+drawable
+dir
+
+drawable-hdpi
+dir
+
+drawable-ldpi
+dir
+
+drawable-mdpi
+dir
+
+drawable-xhdpi
+dir
+
+drawable-xxhdpi
+dir
+
+layout
+dir
+
+layout-v9
+dir
+
+menu
+dir
+
+raw
+dir
+
+values
+dir
+
+values-sw600dp
+dir
+
+values-sw720dp-land
+dir
+
+values-v11
+dir
+
+values-v14
+dir
+
+values-v19
+dir
+
+values-w820dp
+dir
+
+values-zh
+dir
+

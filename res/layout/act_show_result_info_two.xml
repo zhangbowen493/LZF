@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/widget_ml_big"
+    android:background="@color/gray_bg"
+     >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/widget_ml_big"
+        android:background="@drawable/gray_box_bg"
+        android:layout_centerInParent="true"
+        >
+        <TextView 
+            android:id="@+id/tv_dra_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tv_size_high"
+            android:gravity="center_horizontal"
+            android:text="加油加油加油加油加油加油加油加油加油加油加油！"
+            android:textColor="@color/orange_normal"/>
+        
+        
+        <Button
+                android:id="@+id/btn_act_dra_ok"
+                style="@style/MyButtonOrange"
+                android:layout_below="@id/tv_dra_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widget_mt"
+                android:textSize="@dimen/tv_size_high"
+                android:text="完  成" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

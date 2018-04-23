@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="486" >
+
+        <com.wanda.pay.layout.PercentFrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" >
+
+            <ImageView
+                android:id="@+id/iv_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/banner_big" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                app:layout_heightPercent="46%"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="229"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="102" >
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="173" >
+
+                        <TextView
+                            android:id="@+id/tv_money_income"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="**.** 元"
+                            android:textColor="@color/text_blue"
+                            android:textSize="@dimen/fragment_pay_textsize" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_money_income"
+                            android:layout_centerHorizontal="true"
+                            android:text="收入金额"
+                            android:textColor="@color/text_money"
+                            android:textSize="@dimen/fragment_pay_textsize" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="265" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bg_zhanghuyue" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical" >
+
+                        <TextView
+                            android:id="@+id/tv_fragment_main_money_balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerInParent="true"
+                            android:paddingBottom="20dp"
+                            android:text="00.00 元"
+                            android:textColor="@color/text_yue"
+                            android:textSize="@dimen/fragment_pay_textsize" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_fragment_main_money_balance"
+                            android:layout_centerHorizontal="true"
+                            android:text="账户余额"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/fragment_pay_textsize" />
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="229"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="102" >
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="173" >
+
+                        <TextView
+                            android:id="@+id/tv_money_expend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="**.** 元"
+                            android:textColor="@color/text_blue"
+                            android:textSize="@dimen/fragment_pay_textsize" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_money_expend"
+                            android:layout_centerHorizontal="true"
+                            android:text="支出金额"
+                            android:textColor="@color/text_money"
+                            android:textSize="@dimen/fragment_pay_textsize" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.wanda.pay.layout.PercentFrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="387"
+        android:background="@color/gv_item"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/view_small_padding"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rl_main_scan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/view_small_padding"
+                android:layout_weight="1"
+                android:background="@drawable/selector_fragment_my_buttom_background"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/btn_scan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:drawableTop="@drawable/icon_saoma_newskin"
+                    android:text="扫码支付"
+                    android:textSize="@dimen/fragment_pay_textsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_query"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/view_small_padding"
+                android:layout_weight="1"
+                android:background="@drawable/selector_fragment_my_buttom_background"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/btn_query"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:drawableTop="@drawable/icon_chaxunmingxi_newskin"
+                    android:text="查询明细"
+                    android:textSize="@dimen/fragment_pay_textsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_recharge"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/view_small_padding"
+                android:layout_weight="1"
+                android:background="@drawable/selector_fragment_my_buttom_background"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/btn_recharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:drawableTop="@drawable/icon_chongzhi_newskin"
+                    android:text="   充  值"
+                    android:textSize="@dimen/fragment_pay_textsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_deposit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/view_small_padding"
+                android:layout_weight="1"
+                android:background="@drawable/selector_fragment_my_buttom_background"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/btn_deposit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:drawableTop="@drawable/icon_tixian_newskin"
+                    android:text="   提  现  "
+                    android:textSize="@dimen/fragment_pay_textsize" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_small_padding" >
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/view_small_padding"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/rl_transfer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/view_small_padding"
+                android:layout_weight="1"
+                android:background="@drawable/selector_fragment_my_buttom_background"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/btn_transfer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:drawableTop="@drawable/icon_zhuanzhang_newskin"
+                    android:text="   转  账"
+                    android:textSize="@dimen/fragment_pay_textsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_bankmanager"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/view_small_padding"
+                android:layout_weight="1"
+                android:background="@drawable/selector_fragment_my_buttom_background"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/btn_bankmanager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:drawableTop="@drawable/icon_yinhangguanli_newskin"
+                    android:text="银行管理"
+                    android:textSize="@dimen/fragment_pay_textsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_loginpwd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/view_small_padding"
+                android:layout_weight="1"
+                android:background="@drawable/selector_fragment_my_buttom_background"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/btn_loginpwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:drawableTop="@drawable/icon_denglumima_newskin"
+                    android:text="登录密码"
+                    android:textSize="@dimen/fragment_pay_textsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_paypwd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/view_small_padding"
+                android:layout_weight="1"
+                android:background="@drawable/selector_fragment_my_buttom_background"
+                android:clickable="true" >
+
+                <TextView
+                    android:id="@+id/btn_paypwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:drawableTop="@drawable/icon_zhifumima_newskin"
+                    android:text="支付密码"
+                    android:textSize="@dimen/fragment_pay_textsize" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="199"
+        android:background="@color/bg_bottom"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="26" >
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="173" >
+
+            <fragment
+                android:id="@+id/fragment_cycle_viewpager_content"
+                android:name="com.wonders.pay.viewpager.CycleViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

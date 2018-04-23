@@ -1,0 +1,249 @@
+package com.wanda.pay.activity;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+import android.app.Dialog;
+import android.content.Context;
+import android.content.Intent;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.view.Gravity;
+import android.view.KeyEvent;
+import android.view.View;
+import android.view.Window;
+import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Button;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.wanda.pay.R;
+import com.wanda.pay.R.string;
+import com.wanda.pay.adapter.CardListAdapter;
+import com.wanda.pay.app.WDApplication;
+import com.wanda.pay.bean.BankCardBean;
+import com.wanda.pay.bean.Constant_data;
+import com.wanda.pay.bean.ScanPay;
+import com.wanda.pay.dialog.CustomProgressDialog;
+import com.wanda.pay.fragment.ScanPayMoneyFragment;
+import com.wanda.pay.util.ApiClient;
+import com.wanda.pay.util.ImmersedStatusbarUtils;
+import com.wanda.pay.util.Result;
+import com.wanda.pay.util.SPUtils;
+import com.wanda.pay.util.ToastUtil;
+/**
+ * 银行卡管理中心
+ * @author kevin
+ *
+ */
+public class BankCenterActivity extends BaseActivity implements IMVCActivity , OnClickListener , OnItemClickListener{
+
+	private Context mContext = this;
+	/*是否刷新*/
+	public static boolean isRefresh = true;
+	private WDApplication mApplication;
+	private ListView _BCLV_cards;
+	private GetAllCardInfTask mGetAllCardInfTask;
+	private ArrayList<BankCardBean> mCardList;//= new ArrayList<BankCardBean>();
+
+	private CardListAdapter adapter;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_bank_card_center);
+		ImmersedStatusbarUtils.initAfterSetContentView(this, null);
+		mApplication = WDApplication.getInstance();
+		WDApplication.getInstance().addActivity(this);
+		init();
+		initView();
+		refresh();
+	}
+
+	@Override
+	public void onResume() {
+		super.onResume();
+		if(isRefresh){
+			GetCardList();
+		}
+		if(WDApplication.isAddSuccess){
+			showMyDialog(getResources().getString(string.pop_add_card_success_str));
+			WDApplication.isAddSuccess=false;
+		}
+	}
+
+	@Override
+	public void init() {
+
+	}
+
+
+
+	@Override
+	public void initView() {
+		_BCLV_cards = (ListView) findViewById(R.id.actv_lv_bank_card_center);
+
+		TextView _BCTV_Title = (TextView) findViewById(R.id.activity_title_tv_name);
+		_BCTV_Title.setText("我的银行卡");
+
+		findViewById(R.id.activity_title_btn_back).setOnClickListener(this);
+
+	}
+
+	@Override
+	public void refresh(Object... param) {
+		//		CustomProgressDialog.showProgressDialog(mContext, "loading");
+		//		mGetAllCardInfTask = new GetAllCardInfTask();
+		//		mGetAllCardInfTask.execute("");
+		adapter = new CardListAdapter(mContext, mCardList);
+		_BCLV_cards.setAdapter(adapter);
+		_BCLV_cards.setOnItemClickListener(BankCenterActivity.this);
+	}
+
+	private void showMyDialog(String str) {
+		final Dialog mDialog = new Dialog(mContext, R.style.myDilog);
+		mDialog.setContentView(R.layout.dialog_prompt_layout);
+		Button sure = (Button) mDialog.findViewById(R.id.dialog_btn_ok);
+		TextView _DialogTV = (TextView) mDialog
+				.findViewById(R.id.dialog_tv_msg);
+		_DialogTV.setText(str);
+		mDialog.setCanceledOnTouchOutside(false);
+
+		sure.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				if (mDialog.isShowing())
+					mDialog.dismiss();
+			}
+		});
+
+		Window window = mDialog.getWindow();
+		window.setGravity(Gravity.CENTER); // 此处可以设置dialog显示的位置
+		window.setWindowAnimations(R.style.mystyle); // 添加动画mDialog.
+		mDialog.setCanceledOnTouchOutside(true);
+		mDialog.show();
+	}
+
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		isRefresh = true;
+	}
+	@Override
+	public void MyBack() {
+		if(ScanPayMoneyFragment.isNeedBack){
+			setResult(RESULT_OK);
+		}
+
+		finish();
+	}
+
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		// 返回键
+		if (keyCode == KeyEvent.KEYCODE_BACK){
+
+			MyBack();
+		}
+		return super.onKeyDown(keyCode, event);
+	}
+
+	@Override
+	public void onClick(View v) {
+		switch (v.getId()) {
+		case R.id.activity_title_btn_back:
+			MyBack();
+			break;
+
+		default:
+			break;
+		}
+	}
+
+	@Override
+	public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+		if(arg2 < mCardList.size()){
+			//查看详情
+			BankCardBean bankCardBean = mCardList.get(arg2);
+			Intent intent = new Intent(mContext, BankCardManageActivity.class);
+			//			intent.putExtra("BankName", bankCardBean.get_BankName());
+			//			intent.putExtra("CardNumber", bankCardBean.get_BankCardNumber());
+			//			intent.putExtra("protocolNo", bankCardBean.get_ProtocolNo());
+			Bundle bundle = new Bundle();
+			bundle.putSerializable("bankCardBean", bankCardBean);
+			intent.putExtras(bundle);
+			startActivity(intent);
+			overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
+		}
+	}
+
+	/**
+	 * 获取帐号下添加银行卡
+	 */
+	private void GetCardList() {
+
+		CustomProgressDialog.showProgressDialog(mContext, "loading");
+		mGetAllCardInfTask = new GetAllCardInfTask();
+		mGetAllCardInfTask.execute("");
+	}
+
+	private class GetAllCardInfTask extends AsyncTask<String, Void, Boolean> {
+		Result resultStr;
+		Exception exception;
+		@Override
+		protected Boolean doInBackground(String... params) {
+			try {
+				Map<String, Object> param1 = new HashMap<String, Object>();
+				String _LoginName = SPUtils.getString(mContext, Constant_data.sp_key_loginName, "");
+
+				param1.put("customerNo", mApplication.getUserBean().getmUserNO());  //用户编号
+				param1.put("sysNo","1");      //请求系统编码
+				param1.put("loginName", _LoginName);//用户登录名
+				param1.put("status", "1");  //1查询正在签约和已经签约的银行卡 2查询成功绑定的银行卡 3查询默认的银行卡
+				// dataCardInf = "[{\"customerNo\":\"111111111111111\",\"cardTypeCode\":\"中国工商银行储蓄卡\",\"bankCardNo\":\"6215114284123621\",\"expandAttribute\":\"18530125462\"},{“customerNo\":\"22222222222222\",\"cardTypeCode\":\"中国工商银行信用卡\",\"bankCardNo\":\"62151142854512\",\"expandAttribute\":\"18541453261\"},{“customerNo\":\"3333333333333\",\"cardTypeCode\":\"中国招商银行信用卡\",\"bankCardNo\":\"621511428798542\",\"expandAttribute\":\"13895263452\"}]";
+				resultStr = ApiClient.getIsSuccessBankCard(BankCenterActivity.this,param1);
+				mCardList = BankCardBean.fromJsonToList(resultStr.jsonBodyArray);
+
+			}catch(Exception e){
+				e.printStackTrace();
+				exception = e;
+			}
+			return resultStr!= null;
+		}
+
+		@Override
+		protected void onPostExecute(Boolean result) {
+			CustomProgressDialog.hideProgressDialog();
+			if(exception != null ){
+				Toast.makeText(getApplicationContext(), getResources().getString(string.http_error_anomalies), Toast.LENGTH_LONG).show();
+				return;
+			}
+			if(result){
+				isRefresh = false;
+				if(Constant_data.HTTP_SUCCESS.equals(resultStr.coder)){
+					if(mCardList != null) {
+						adapter.setData(mCardList);
+
+						adapter.notifyDataSetChanged();
+					}
+				}else{
+					ToastUtil.showShort(mContext, resultStr.msg);
+				}
+			}else{
+				ToastUtil.showLong(mContext, getResources().getString(string.http_error_anomalies));
+			}
+			super.onPostExecute(result);
+		}
+
+		@Override
+		protected void onCancelled() {
+			mGetAllCardInfTask = null;
+			super.onCancelled();
+		}
+	}
+
+}

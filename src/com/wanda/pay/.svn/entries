@@ -1,0 +1,55 @@
+8
+
+dir
+118
+https://172.16.31.122/svn/WondersPay-Android/branches/source-eclipse/developers-zbw-chakan/src/com/wanda/pay
+https://172.16.31.122/svn/WondersPay-Android
+
+
+
+2016-05-26T09:17:25.749451Z
+117
+zhangbowen
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+ccab8fb8-b3c6-e44b-b722-937c6cf4e6c0
+
+activity
+dir
+
+adapter
+dir
+
+app
+dir
+
+bean
+dir
+
+dialog
+dir
+
+fragment
+dir
+
+layout
+dir
+
+util
+dir
+
+view
+dir
+

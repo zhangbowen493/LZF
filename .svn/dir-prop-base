@@ -1,0 +1,22 @@
+K 13
+svn:mergeinfo
+V 195
+/branches/source-eclipse/acceptance-dl-addcard:23-24
+/branches/source-eclipse/acceptance-trunk:15-25
+/branches/source-eclipse/developers-lzp-jiaoyijilu:62-87
+/trunk/source-eclipse/app/wanda:13-26
+K 10
+svn:ignore
+V 87
+.settings
+bin
+gen
+gradle
+proguard
+.classpath
+.project
+build.gradle
+gradlew
+gradlew.bat
+
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/executor
+END
+AsyncTaskExecInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/executor/AsyncTaskExecInterface.java
+END
+AsyncTaskExecManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/executor/AsyncTaskExecManager.java
+END
+PlatformSupportManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/executor/PlatformSupportManager.java
+END
+DefaultAsyncTaskExecInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/executor/DefaultAsyncTaskExecInterface.java
+END
+ResultHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/executor/ResultHandler.java
+END

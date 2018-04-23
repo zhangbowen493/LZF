@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/item_rl_card_info_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/widget_mt_low"
+        android:background="@color/gray_bg" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_box_bg"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp" >
+
+        <RelativeLayout 
+            android:id="@+id/rl_add_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/iv_add_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_add" />
+            <TextView 
+                android:id="@+id/tv_add_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_add_card"
+                android:layout_marginLeft="10dp"
+                android:text="添加银行卡"
+                android:textColor="@color/blue"
+                android:layout_centerVertical="true"
+                />
+            
+        </RelativeLayout>
+        
+        <TextView
+            android:id="@+id/item_tv_card_info_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_bankicon"
+            android:layout_marginLeft="@dimen/widget_ml_big"
+            android:layout_toRightOf="@+id/iv_bankicon"
+            android:gravity="center_vertical"
+            android:text="中国银行"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size" />
+        <TextView
+            android:id="@+id/item_tv_card_type_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_bankicon"
+            android:layout_marginLeft="@dimen/widget_ml_big"
+            android:layout_toRightOf="@+id/iv_bankicon"
+            android:gravity="center_vertical"
+            android:text="储蓄卡"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size_low" />
+        <TextView
+            android:id="@+id/item_tv_card_number_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/widget_mt_low"
+            android:gravity="center_vertical"
+            android:text="**** **** **** 7759"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size_low" />
+
+        <ImageView
+            android:id="@+id/iv_bankicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/icon_bank" 
+            />
+    </RelativeLayout>
+
+</LinearLayout>

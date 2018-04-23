@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/camera
+END
+CameraConfigurationManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/camera/CameraConfigurationManager.java
+END
+CameraManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/camera/CameraManager.java
+END
+PlanarYUVLuminanceSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/camera/PlanarYUVLuminanceSource.java
+END
+OpenCameraInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/camera/OpenCameraInterface.java
+END
+PreviewCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/camera/PreviewCallback.java
+END
+GingerbreadOpenCameraInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/camera/GingerbreadOpenCameraInterface.java
+END
+AutoFocusManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/camera/AutoFocusManager.java
+END
+DefaultOpenCameraInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/camera/DefaultOpenCameraInterface.java
+END
+OpenCameraManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/camera/OpenCameraManager.java
+END

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">链支付</string>
+    <string name="hello_world">稍等。。。</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- 网络请求提示文字 -->
+    <string name="http_error_anomalies">网络异常，请重试!</string>
+
+    <!-- 日期格式 -->
+    <string name="yyyyMMddHHmmss">yyyyMMddHHmmss</string>
+    <string name="yyyy_m_d_h_m_s">yyyy-M-d HH:mm:ss</string>
+    <string name="y_m_d_h_m_s">yy-M-d HH:mm:ss</string>
+    <string name="yy_m_d">yyyy年MM月dd日</string>
+    <string name="yy_m_d_HH_mm">yyyy年MM月dd日 HH:mm</string>
+    <string name="yy_m_d_g">yyyy-M-d</string>
+    <string name="yy_m_d_f">yyyy-MM-dd</string>
+    <string name="_m_d">M-d</string>
+    <string name="yy_m">yyyy年M月</string>
+    <string name="y_m_d">yy年M月d日</string>
+    <string name="m_d_h_m">M月d日 H时m分</string>
+    <string name="m_d">M月d日</string>
+    <string name="m_d_h">M月d日H时</string>
+    <string name="mm_dd_h_m">M-d HH:mm</string>
+    <string name="mm_dd">MM-dd</string>
+    <string name="yyyy_MM_dd_HH_mm_ss">yyyy-MM-dd HH:mm:ss</string>
+    <string name="yyyy_mm">yyyy年MM月</string>
+    <string name="mm_yyyy">MM月/yyyy</string>
+
+    <!-- listview -->
+    <string name="p2refresh_head_load_more">加载更多</string>
+    <string name="p2refresh_end_load_more">加载更多</string>
+    <string name="p2refresh_end_click_load_more">点击加载</string>
+    <string name="p2refresh_release_refresh">松开刷新</string>
+    <string name="p2refresh_pull_to_refresh">下拉刷新</string>
+    <string name="p2refresh_doing_head_refresh">正在刷新&#8230;</string>
+    <string name="p2refresh_doing_end_refresh">加载中&#8230;</string>
+    <string name="p2refresh_refresh_lasttime">最近更新&#160;&#058;&#160;</string>
+    <string name="img">img</string>
+    <string name="prompt">提示</string>
+    <string name="determine">确定</string>
+    <string name="cancel">取消</string>
+    <string name="get_back">返回</string>
+    <string name="solution">答案  </string>
+    
+    <string name="balance">余额：</string>
+    <string name="charge_money">充值</string>
+    <string name="draw_money">提现</string>
+    <string name="transfer_accounts">转账</string>
+    
+    
+    
+    <string name="next">下一步</string>
+    <string name="phone_number">手机号</string>
+    <string name="service_agreement"><u>《服务协议》</u></string>
+    <string name="please_putin_again">再次输入</string>
+    <string name="please_putin_password">请输入密码</string>
+    <string name="goto_login">去登录</string>
+    <string name="unlogin_prompt_info">您尚未登录，请先登录！</string>
+    <string name="check_code_tv">随机金额</string> 
+    <string name="tv_reg_check_again_noml">获取验证码</string>
+    <string name="tv_reg_check_again_send">%1$s秒后重发</string>
+    <string name="app_exit_prompt">您确定退出当前账户？</string>
+    <string name="login_input_account">请输入登录帐号</string>
+    <string name="login_pl_input_nickname">用户昵称</string>
+    <string name="login_pl_input_password">请输入登录密码</string>
+    <string name="login_find_password">忘记密码?</string>
+    <string name="login_tv">登 录</string>
+    <string name="login_register">注 册</string>
+    <string name="login_new_register">新用户注册</string>
+    <string name="login_pl_input_pay_password">请输入支付密码</string>
+    <string name="regist_pl_input_phone">请输入手机号</string>
+    <string name="regist_input_phone">输入手机号</string>
+    <string name="regist_input_password">登录密码</string>
+    <string name="regist_input_pay_password">支付密码</string>
+    <string name="regist_confirm_password">确认密码</string>
+    <string name="regist_questions">密保问题:</string>
+    <string name="pl_input_confirm_password">请再次输入登录密码</string>
+    <string name="pl_input_verification_code">请输入验证码</string>
+    <string name="read_and_confirm">已阅读并同意</string>
+    <string name="regist_success">注册成功</string>
+    <string name="regist_input_password_hint">组合大小写英文字母、数字</string>
+    <string name="regist_success_to_login">尊敬的用户，您手机已被注册，请点击登录</string>
+    <string name="user_center">个人信息</string>
+    <string name="user_id_card_number_tv">身份证号</string>
+    <string name="user_name">姓名</string>
+    <string name="user_phone">手机号</string>
+    <string name="user_real_state">实名验证</string>
+    <string name="user_real_no">未认证</string>
+    <string name="user_real_yes">已认证</string>
+    <string name="user_login_password">登录密码管理</string>
+    <string name="user_pay_password">支付密码管理</string>
+    <string name="user_bank_card_manage">银行卡管理</string>
+    <string name="uset_scan_pay">链支付订单支付</string>
+    <string name="bank_card_type">卡类型</string>
+    <string name="bank_card_number_tv">银行卡号</string>
+    <string name="deleted_tv">删除</string>
+    <string name="confirm">确定</string>
+    <string name="msg_camera_framework_bug">抱歉，Android相机出现问题。您可能需要重启设备。</string>
+    <string name="open_card_person_name">持卡人姓名</string>
+    <string name="pl_putin_id_card_number">身份证号码</string>
+    <string name="select_bank">选择开户行</string>
+    <string name="pl_putin_bank_card_number">银行卡号</string>
+    <string name="pl_putin_bank_check_phone">银行预留手机号码</string>
+    <string name="login_regist">登录/注册</string>
+    <string name="start_time_str">开始时间</string>
+    <string name="end_time_str">结束时间</string>
+    <string name="search">查询</string>
+    
+    
+    <string name="pop_defult_str">系统已给您的卡号汇入一元以下金额，请查询该交易金额作为验证凭证（通过短信通知或者网银）。</string>
+    <string name="pop_again_str">该银行卡正在执行解约后再签约，您需要输入第一次成功签约的随机金额。</string>
+    <string name="pop_del_card_str">您将要解除本卡的签约模式，请确保还保留本卡第一次成功签约时交易金额，已完成交易金额验证凭证。</string>
+    <string name="pop_add_card_success_str">本次签约已成功，请妥善保管好签约时交易金额，为今后银行卡解约再签约使用。</string>
+    
+</resources>

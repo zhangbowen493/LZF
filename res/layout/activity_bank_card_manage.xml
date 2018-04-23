@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_manage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:fitsSystemWindows="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_bg" >
+
+        <include
+            android:id="@+id/act_top"
+            layout="@layout/activity_title" />
+
+        
+        
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="@dimen/widget_mt_big"
+            android:background="@drawable/gray_box_bg" >
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="2.0dip"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/dotted_line" />
+            <ImageView
+                android:id="@+id/act_iv_card_mange_bank_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/icon_bank" />
+            <TextView
+                android:id="@+id/act_tv_card_mange_bank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/act_iv_card_mange_bank_icon"
+                android:text="中国银行"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tv_size" />
+
+            <TextView
+                android:id="@+id/act_tv_card_mange_bank_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/act_iv_card_mange_bank_icon"
+                android:text="储蓄卡"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tv_size_s" />
+
+            <TextView
+                android:id="@+id/act_tv_card_mange_bank_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/act_tv_card_mange_bank_type"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/act_tv_card_mange_bank_type"
+                android:text="尾号7759"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black"
+                android:textSize="@dimen/tv_size_s" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2.0dip"
+                android:layout_toRightOf="@+id/act_iv_card_mange_bank_icon"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/dotted_line" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/act_tv_card_owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout1"
+            android:background="@color/white"
+            android:lineSpacingExtra="5.0dip"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="持卡人"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size" />
+        <TextView
+            android:id="@+id/act_tv_card_mange_bank_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_toRightOf="@+id/act_tv_card_owner"
+            android:background="@color/white"
+            android:lineSpacingExtra="5.0dip"
+            android:paddingBottom="10dp"
+            android:paddingLeft="25dp"
+            android:paddingTop="10dp"
+            android:text="黄晓明"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size" />
+         <View
+                android:layout_width="match_parent"
+                android:layout_height="2.0dip"
+                android:layout_below="@+id/act_tv_card_mange_bank_info"
+                android:background="@drawable/dotted_line" />
+         
+
+        <Button
+            android:id="@+id/act_btn_card_mange_bank_del"
+            style="@style/MyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/act_tv_card_mange_bank_info"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/deleted_tv" />
+    </RelativeLayout>
+
+</RelativeLayout>

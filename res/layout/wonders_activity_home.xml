@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wonders.uidemo.ui.SecondActivity" >
+
+    <com.wonders.pay.viewpager.PayViewPager
+        android:id="@+id/payViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_line"
+        android:layout_below="@+id/act_top" >
+
+    </com.wonders.pay.viewpager.PayViewPager>
+
+    <TextView 
+        android:id="@+id/tv_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/ll_buttom"
+        android:background="#f3f3f3"/> 
+    <LinearLayout
+        android:id="@+id/ll_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp" >
+
+        <Button
+            android:id="@+id/btn_pay"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/selector_fragment_pay"
+            android:text="链支付" 
+            android:textSize="12sp"
+            android:textColor="@drawable/selector_fragment_pay_textcolor"/>
+
+       <!--  <Button
+            android:id="@+id/btn_server"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_weight="1"
+            android:text="服务" 
+            android:textColor="@drawable/selector_fragment_pay_textcolor"
+            android:background="@null"
+            android:drawableTop="@drawable/selector_fragment_server" /> -->
+
+        <Button
+            android:id="@+id/btn_apply"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="应用" 
+            android:textColor="@drawable/selector_fragment_pay_textcolor"
+            android:layout_weight="1"
+            android:background="@null"
+            android:textSize="12sp"
+            android:drawableTop="@drawable/selector_fragment_apply" />
+
+        <Button
+            android:id="@+id/btn_my"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="我的" 
+            android:textColor="@drawable/selector_fragment_pay_textcolor"
+            android:layout_weight="1"
+            android:background="@null"
+            android:textSize="12sp"
+            android:drawableTop="@drawable/selector_fragment_my" />
+    </LinearLayout>
+      
+</RelativeLayout>

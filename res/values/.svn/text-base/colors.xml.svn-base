@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="black">#333333</color>
+    <color name="tishi">#a3a3a3</color>
+    <color name="white">#ffffff</color>
+    <color name="title_not_choice">#929292</color>
+    <color name="title_bg">#D7101B</color>
+
+    <!-- 自定义listview -->
+    <color name="pull_refresh_textview">#000000</color>
+    <color name="pull_refresh_head_bg">#ffffff</color>
+    <color name="gold">#000000</color>
+
+    <!-- start zxing -->
+    <color name="viewfinder_frame">#2477ab</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_view">#90000000</color>
+    <!-- end zxing -->
+
+    <color name="scan_choicebank_nomal">#F9F9F9</color>
+    <color name="scan_choicebank_press">#EBEBEB</color>
+
+    <!-- 蓝色正常值：#098fd3 -->
+    <color name="blue_normal">#098fd3</color>
+    <!-- 蓝色按键暗色值:#3f87ac -->
+    <color name="blue_pressed">#3f87ac</color>
+    <!-- 按键灰色值：cdcdcd -->
+    <color name="gray_disabled">#cdcdcd</color>
+
+    <!-- 橘色正常值：#faa32f -->
+    <color name="orange_normal">#098fd3</color>
+    <!-- 橘色按下值：#de7f01 -->
+    <color name="orange_pressed">#3f87ac</color>
+    <!-- 灰色框：#f9f9f9 -->
+    <color name="gray_bg">#f9f9f9</color>
+    <!-- 灰色外框：#eeeeee -->
+    <color name="gray_border">#eeeeee</color>
+    <!-- 灰色字体：#dedede -->
+    <color name="gray_tv_cl">#dedede</color>
+    <color name="gray_tv_cl1">#d6d6d6</color>
+    <color name="gray_tv_col">#9b9b9b</color>
+
+    <!-- 白烟色字体 #F5F5F5 -->
+    <color name="whiteSmoke_tv">#F5F5F5</color>
+    <!-- 灰色字体#A6A6A6 -->
+    <color name="gray_tv_item_trsr">#A6A6A6</color>
+    <!-- 浅黑色字体#333333 -->
+    <color name="black_tv_item_trsr">#333333</color>
+    <!-- 浅黑色字体#666666 -->
+    <color name="black_tv_trsd">#666666</color>
+    <!-- 青色字体#44AFFD -->
+    <color name="cyan_tv">#44AFFD</color>
+    <!-- 浅灰色背景#F7FAFA -->
+    <color name="gray_rl_act">#F7FAFA</color>
+    
+    
+    <!-- 新版皮肤颜色资源 -->
+    <drawable name="selected">#05BF45</drawable>
+    <drawable name="unselected">#818181</drawable>
+    <!-- <color name="black">#000000</color> -->
+    <color name="blue">#44ADFE</color>
+    <color name="white2">#FFFFFF</color> 
+    <color name="text_blue">#45BFF6</color>
+    <color name="text_money">#7C7C7C</color>
+    <color name="text_yue">#FEEF00</color>
+    <color name="gv_item">#F7F9FA</color>
+    <color name="bg_bottom">#F3F3F3</color>
+
+</resources>

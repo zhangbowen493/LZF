@@ -1,0 +1,111 @@
+package com.wanda.pay.activity;
+
+import java.util.ArrayList;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.os.Handler;
+import android.view.KeyEvent;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.TextView;
+
+import com.wanda.pay.R;
+import com.wanda.pay.app.WDApplication;
+import com.wanda.pay.bean.ScanPay;
+/**
+ * 充值成功
+ * @author kevin
+ *
+ */
+public class RechargeSuccessfuActivity extends BaseActivity implements
+		IMVCActivity , OnClickListener{
+	
+	private TextView mact_money_text;
+	private TextView mact_number_text;
+	private TextView mact_mode_text;
+	private TextView mact_time_text;
+	private String mMoney;
+	private int number;
+	private String mFromWhere;
+	private String lognname;
+	private ArrayList<ScanPay> mCardDataList = new ArrayList<ScanPay>();
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_show_recharge_success);
+		WDApplication.getInstance().addActivity(this);
+		init();
+		initView();
+		refresh();
+	}
+
+	@Override
+	public void init() {
+		// TODO Auto-generated method stub
+//		_Extra_Phone = getIntent().getStringExtra("accounts");
+		mMoney=getIntent().getStringExtra("amount");
+		number=getIntent().getIntExtra("number", 0);
+		mFromWhere = getIntent().getStringExtra("fromwhere");
+		lognname=getIntent().getStringExtra("loginName");
+		mact_money_text.setText(mMoney);
+		mact_number_text.setText(lognname);
+		mact_mode_text.setText(mCardDataList.get(number).getBankName());
+		
+	}
+
+	@Override
+	public void initView() {
+		mact_money_text=(TextView) findViewById(R.id.act_money_text);
+		mact_number_text=(TextView) findViewById(R.id.act_number_text);
+		mact_mode_text=(TextView) findViewById(R.id.act_mode_text);
+		mact_time_text=(TextView) findViewById(R.id.act_time_text);
+		TextView _RSTV_Title = (TextView) findViewById(R.id.activity_title_tv_name);
+		_RSTV_Title.setText("帐户充值");
+		findViewById(R.id.activity_title_btn_back).setOnClickListener(this);
+//		findViewById(R.id.activity_regist_success_btn_gotologin).setOnClickListener(this);
+	}
+
+	@Override
+	public void refresh(Object... param) {
+		// TODO Auto-generated method stub
+	}
+
+	@Override
+	public void MyBack() {
+		// TODO Auto-generated method stub
+		Intent intent = new Intent(RechargeSuccessfuActivity.this, BankCenterActivity.class);
+//		intent.putExtra("success_phone", _Extra_Phone);
+		startActivity(intent);
+		finish();
+	}
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		// TODO Auto-generated method stub
+		// 返回键
+				if (keyCode == KeyEvent.KEYCODE_BACK){
+					MyBack();
+				}
+		return super.onKeyDown(keyCode, event);
+	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		switch (v.getId()) {
+		case R.id.activity_title_btn_back:
+			//返回
+			MyBack();
+			break;
+//		case R.id.activity_regist_success_btn_gotologin:
+//			//去登录
+//			MyBack();
+//			break;
+
+		default:
+			break;
+		}
+	}
+
+}

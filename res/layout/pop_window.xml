@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@drawable/bg_rili"
+     >
+    <TextView
+        android:id="@+id/pop_tv"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:singleLine="false"
+       android:gravity="center_vertical"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/tv_size_s"
+        android:text="@string/pop_again_str"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

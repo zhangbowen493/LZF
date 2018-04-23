@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:fitsSystemWindows="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_rl_act" >
+
+        <include
+            android:id="@+id/act_top"
+            layout="@layout/activity_title" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rl_transaction_records_hight"
+            android:layout_below="@+id/act_top" >
+
+            <TextView
+                android:id="@+id/act_tv_transation_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:text="03月/2016"
+                android:textColor="@color/cyan_tv"
+                android:textSize="@dimen/font_size_15" />
+
+            <RelativeLayout
+                android:id="@+id/act_rl_transation_rili"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true" >
+
+                <ImageView
+                    android:id="@+id/act_iv_transation_rili"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:scaleType="center"
+                    android:src="@drawable/icon_rili" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/act_lv_transation_recodes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:background="@color/white"
+            android:divider="@color/gray_rl_act"
+            android:dividerHeight="1dp"
+            android:listSelector="@color/white"
+            android:scrollbars="none" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,509 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout
+END
+pull_to_refresh_load_more_mf.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/res/layout/pull_to_refresh_load_more_mf.xml
+END
+umeng_update_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/res/layout/umeng_update_dialog.xml
+END
+activity_regist_success.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_regist_success.xml
+END
+popupwindow_select_bankcard_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/popupwindow_select_bankcard_list.xml
+END
+activity_deposit_success.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_deposit_success.xml
+END
+pull_to_refresh_load_more.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/res/layout/pull_to_refresh_load_more.xml
+END
+common_datetime.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/res/layout/common_datetime.xml
+END
+umeng_common_download_notification.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/res/layout/umeng_common_download_notification.xml
+END
+scan_popwindow_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/res/layout/scan_popwindow_layout.xml
+END
+pull_to_refresh_head_sp.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/res/layout/pull_to_refresh_head_sp.xml
+END
+fragment_scan_paymoney.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/res/layout/fragment_scan_paymoney.xml
+END
+activity_show_transfer_success.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_show_transfer_success.xml
+END
+scan_choicecard_pop_listview_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/res/layout/scan_choicecard_pop_listview_item.xml
+END
+dialog_prompt_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/res/layout/dialog_prompt_layout.xml
+END
+activity_update_pay_pwd_success.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/WondersPay-Android/!svn/ver/119/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_update_pay_pwd_success.xml
+END
+wonders_fragment_apply.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/WondersPay-Android/!svn/ver/90/branches/source-eclipse/developers-zbw-chakan/res/layout/wonders_fragment_apply.xml
+END
+activity_transation_detail.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/WondersPay-Android/!svn/ver/89/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_transation_detail.xml
+END
+activity_show_recharge_success.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_show_recharge_success.xml
+END
+common_title.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/res/layout/common_title.xml
+END
+qr_code_scan.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/res/layout/qr_code_scan.xml
+END
+title_back_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/res/layout/title_back_layout.xml
+END
+wonders_fragment_main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/wonders_fragment_main.xml
+END
+activity_set_pay_password1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/WondersPay-Android/!svn/ver/98/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_set_pay_password1.xml
+END
+item_sp_quest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/item_sp_quest.xml
+END
+activity_setname.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/WondersPay-Android/!svn/ver/119/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_setname.xml
+END
+wonders_grid_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/WondersPay-Android/!svn/ver/90/branches/source-eclipse/developers-zbw-chakan/res/layout/wonders_grid_item.xml
+END
+act_financial_top_up.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/act_financial_top_up.xml
+END
+fragment_wanda_pay.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/res/layout/fragment_wanda_pay.xml
+END
+act_show_result_info_two.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/WondersPay-Android/!svn/ver/102/branches/source-eclipse/developers-zbw-chakan/res/layout/act_show_result_info_two.xml
+END
+wonders_activity_home.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/wonders_activity_home.xml
+END
+alert_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/res/layout/alert_dialog.xml
+END
+fragment_add_card_two.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/res/layout/fragment_add_card_two.xml
+END
+activity_update_pwd_success.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/WondersPay-Android/!svn/ver/119/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_update_pwd_success.xml
+END
+wonders_fragment_my.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/wonders_fragment_my.xml
+END
+pull_to_refresh_head.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/res/layout/pull_to_refresh_head.xml
+END
+activity_add_card_two_two.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_add_card_two_two.xml
+END
+capture.xml
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/capture.xml
+END
+activity_login.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_login.xml
+END
+activity_find_pay_password.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/WondersPay-Android/!svn/ver/119/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_find_pay_password.xml
+END
+activity_bank_card_manage.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_bank_card_manage.xml
+END
+activity_regist_check_phone.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_regist_check_phone.xml
+END
+scan_input_password_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/res/layout/scan_input_password_layout.xml
+END
+view_progress_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/res/layout/view_progress_dialog.xml
+END
+item_sp_bank.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/item_sp_bank.xml
+END
+wonders_view_cycle_viewpager_indicator.xml
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/WondersPay-Android/!svn/ver/90/branches/source-eclipse/developers-zbw-chakan/res/layout/wonders_view_cycle_viewpager_indicator.xml
+END
+fragment_login.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/WondersPay-Android/!svn/ver/101/branches/source-eclipse/developers-zbw-chakan/res/layout/fragment_login.xml
+END
+activity_add_card_one.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/WondersPay-Android/!svn/ver/119/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_add_card_one.xml
+END
+activity_main.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/WondersPay-Android/!svn/ver/110/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_main.xml
+END
+act_select_bank_card.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/res/layout/act_select_bank_card.xml
+END
+item_card_bank.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/item_card_bank.xml
+END
+activity_regist_success2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_regist_success2.xml
+END
+activity_camera_or_crop.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/WondersPay-Android/!svn/ver/119/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_camera_or_crop.xml
+END
+act_show_result_info.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/res/layout/act_show_result_info.xml
+END
+tb_munion_aditem.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/res/layout/tb_munion_aditem.xml
+END
+activity_regist_input_phone.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_regist_input_phone.xml
+END
+item_transaction_records.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/WondersPay-Android/!svn/ver/89/branches/source-eclipse/developers-zbw-chakan/res/layout/item_transaction_records.xml
+END
+activity_bank_card_center.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_bank_card_center.xml
+END
+scan_paymoney_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/res/layout/scan_paymoney_layout.xml
+END
+view_progress_bar_dialog.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/WondersPay-Android/!svn/ver/119/branches/source-eclipse/developers-zbw-chakan/res/layout/view_progress_bar_dialog.xml
+END
+activity_set_pay_password.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/WondersPay-Android/!svn/ver/119/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_set_pay_password.xml
+END
+tb_munion_adview.xml
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/res/layout/tb_munion_adview.xml
+END
+pop_window.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/WondersPay-Android/!svn/ver/119/branches/source-eclipse/developers-zbw-chakan/res/layout/pop_window.xml
+END
+activity_add_card_two.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/WondersPay-Android/!svn/ver/119/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_add_card_two.xml
+END
+activity_title.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_title.xml
+END
+fragment_add_card_one.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/WondersPay-Android/!svn/ver/110/branches/source-eclipse/developers-zbw-chakan/res/layout/fragment_add_card_one.xml
+END
+dialog_layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/res/layout/dialog_layout.xml
+END
+activity_user_center.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/WondersPay-Android/!svn/ver/89/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_user_center.xml
+END
+activity_transation_records.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_transation_records.xml
+END
+activity_web_view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_web_view.xml
+END
+activity_addbankcard_success.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_addbankcard_success.xml
+END
+activity_realnamecertification.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/WondersPay-Android/!svn/ver/119/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_realnamecertification.xml
+END
+list_select_cards.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/WondersPay-Android/!svn/ver/103/branches/source-eclipse/developers-zbw-chakan/res/layout/list_select_cards.xml
+END
+activtiy_set_pay_password.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/res/layout/activtiy_set_pay_password.xml
+END
+spinner_out_item.xml
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/WondersPay-Android/!svn/ver/110/branches/source-eclipse/developers-zbw-chakan/res/layout/spinner_out_item.xml
+END
+wonders_view_banner.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/WondersPay-Android/!svn/ver/90/branches/source-eclipse/developers-zbw-chakan/res/layout/wonders_view_banner.xml
+END
+popupwindow_bank_list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/popupwindow_bank_list.xml
+END
+popupwindow_transaction_records.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/popupwindow_transaction_records.xml
+END
+act_financial_transfer_account.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/act_financial_transfer_account.xml
+END
+act_financial_draw_money.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/act_financial_draw_money.xml
+END
+activity_question_listview.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_question_listview.xml
+END
+activity_regist_check_phone2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/res/layout/activity_regist_check_phone2.xml
+END
+wonders_fragment_server.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/WondersPay-Android/!svn/ver/90/branches/source-eclipse/developers-zbw-chakan/res/layout/wonders_fragment_server.xml
+END
+act_financial_transfer_accounf1.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/WondersPay-Android/!svn/ver/106/branches/source-eclipse/developers-zbw-chakan/res/layout/act_financial_transfer_accounf1.xml
+END
+wonders_view_cycle_viewpager_contet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/WondersPay-Android/!svn/ver/90/branches/source-eclipse/developers-zbw-chakan/res/layout/wonders_view_cycle_viewpager_contet.xml
+END

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginActivity" >
+
+    <include
+        android:id="@+id/act_top"
+        layout="@layout/activity_title"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/act_rl_login_wanda_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/act_tv_other_loginstyle"
+        android:layout_alignParentTop="true"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/login_img_mt"
+            android:background="@drawable/login_logo"
+            android:contentDescription="@string/img" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_marginLeft="@dimen/widget_ml_low"
+            android:layout_marginRight="@dimen/widget_ml_low"
+            android:layout_marginTop="@dimen/widget_mt_big"
+            android:background="@drawable/gray_box_bg"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/edittext_high"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/widget_ml"
+                        android:contentDescription="@string/img"
+                        android:src="@drawable/user_logo" />
+
+                    <EditText
+                        android:id="@+id/activity_login_edt_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/edittext_high"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/widget_ml"
+                        android:layout_toRightOf="@+id/imageView3"
+                        android:background="@color/transparent"
+                        android:ems="10"
+                        android:gravity="center_vertical|left"
+                        android:hint="@string/login_input_account"
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:textColorHint="@color/gray_tv_cl"
+                        android:textSize="@dimen/tv_size" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/login_line" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp" >
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/edittext_high"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/widget_ml"
+                        android:contentDescription="@string/img"
+                        android:src="@drawable/password_img" />
+
+                    <cn.passguard.PassGuardEdit
+                        android:id="@+id/activity_login_edt_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/edittext_high"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/widget_ml"
+                        android:layout_toRightOf="@+id/imageView2"
+                        android:background="@color/transparent"
+                        android:ems="10"
+                        android:gravity="center_vertical|left"
+                        android:hint="@string/login_pl_input_password"
+                        android:inputType="textPassword"
+                        android:longClickable="false"
+                        android:singleLine="true"
+                        android:textColorHint="@color/gray_tv_cl"
+                        android:textSize="@dimen/tv_size" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/login_line" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/activity_login_btn_login"
+            style="@style/MyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/widget_ml"
+            android:layout_marginRight="@dimen/widget_ml"
+            android:layout_marginTop="@dimen/button_high"
+            android:background="@drawable/button_select_bg"
+            android:text="@string/login_tv"
+            android:textSize="@dimen/tv_size_high" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/act_rl_login_wanda_login1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/activity_login_btn_registered"
+                style="@style/MyWithdrawalButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="免费注册"
+                android:textColor="@color/blue_normal"
+                android:textSize="@dimen/tv_size" />
+
+            <TextView
+                android:id="@+id/text_g1"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:background="@color/blue_normal"
+                android:text=""
+                android:textColor="@color/blue_normal"
+                android:textSize="@dimen/tv_size" />
+
+            <Button
+                android:id="@+id/activity_login_btn_find_password"
+                style="@style/MyWithdrawalButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="忘记密码"
+                android:textColor="@color/blue_normal"
+                android:textSize="@dimen/tv_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

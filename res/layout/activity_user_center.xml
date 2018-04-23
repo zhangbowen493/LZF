@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/act_top"
+        layout="@layout/activity_title" />
+
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout 
+            android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+            >
+        
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_high"
+        android:layout_marginTop="@dimen/widget_mt"
+        android:background="@drawable/gray_box_bg"
+        android:paddingLeft="@dimen/widget_ml"
+        android:paddingRight="@dimen/widget_ml" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/user_name"
+            android:drawablePadding="@dimen/widget_ml_low"
+            android:gravity="center_vertical"
+            android:text="@string/user_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size" />
+
+        <TextView
+            android:id="@+id/act_tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|right"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_high"
+        android:background="@drawable/gray_box_bg"
+        android:paddingLeft="@dimen/widget_ml"
+        android:paddingRight="@dimen/widget_ml" >
+
+        <TextView
+            android:id="@+id/activity_edt_regist_check_pay_password_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/user_phone"
+            android:drawablePadding="@dimen/widget_ml_low"
+            android:gravity="center_vertical"
+            android:text="@string/user_phone"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size" />
+
+        <TextView
+            android:id="@+id/act_tv_user_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|right"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_high"
+        android:background="@drawable/gray_box_bg"
+        android:paddingLeft="@dimen/widget_ml"
+        android:paddingRight="@dimen/widget_ml" >
+
+        <TextView
+            android:id="@+id/activity_edt_regist_check_login_password_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/user_feal"
+            android:drawablePadding="@dimen/widget_ml_low"
+            android:gravity="center_vertical"
+            android:text="@string/user_real_state"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size" />
+
+        <TextView
+            android:id="@+id/act_tv_user_real_name_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|right"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gray_box_bg"
+        android:layout_marginTop="@dimen/widget_mt"
+        android:padding="@dimen/widget_ml"
+        android:orientation="vertical"
+        
+         >
+
+        <TextView
+            android:id="@+id/tv_act_uc_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/balance"
+            android:layout_marginLeft="@dimen/widget_ml_big"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="@dimen/tv_size_high" />
+        
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/widget_mt_low"
+            android:orientation="horizontal"
+            >
+            <Button 
+                android:id="@+id/btn_act_uc_top_up"
+                style="@style/MyButtonOrange_small"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/charge_money"
+                android:textSize="@dimen/tv_size_high"
+                />
+            <Button 
+                android:id="@+id/btn_act_uc_draw_money"
+                android:layout_marginLeft="@dimen/widget_ml_low"
+                style="@style/MyButtonOrange_small"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/draw_money"
+                android:textSize="@dimen/tv_size_high"
+                />
+            <Button 
+                android:id="@+id/btn_act_uc_transfer_account"
+                android:layout_marginLeft="@dimen/widget_ml_low"
+                style="@style/MyButtonOrange_small"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/transfer_accounts"
+                android:textSize="@dimen/tv_size_high"
+                />
+            
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/act_rl_user_bank_card"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_high"
+        android:background="@drawable/gray_box_bg"
+        android:layout_marginTop="@dimen/widget_mt"
+        android:paddingLeft="@dimen/widget_ml"
+        android:paddingRight="@dimen/widget_ml" >
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/user_bank_manage"
+            android:drawablePadding="@dimen/widget_ml_low"
+            android:gravity="center_vertical"
+            android:text="@string/user_bank_card_manage"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/img"
+            android:gravity="center_vertical|right"
+            android:src="@drawable/enter_into" />
+    </RelativeLayout>
+   
+
+    <RelativeLayout
+        android:id="@+id/act_rl_user_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_high"
+        android:layout_marginTop="@dimen/widget_mt"
+        android:background="@drawable/gray_box_bg"
+        android:paddingLeft="@dimen/widget_ml"
+        android:paddingRight="@dimen/widget_ml" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/user_password"
+            android:drawablePadding="@dimen/widget_ml_low"
+            android:gravity="center_vertical"
+            android:text="@string/user_login_password"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/img"
+            android:gravity="center_vertical|right"
+            android:src="@drawable/enter_into" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/act_rl_user_pay_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_high"
+        android:background="@drawable/gray_box_bg"
+        android:paddingLeft="@dimen/widget_ml"
+        android:paddingRight="@dimen/widget_ml" >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/user_pay_password"
+            android:drawablePadding="@dimen/widget_ml_low"
+            android:gravity="center_vertical"
+            android:text="@string/user_pay_password"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/img"
+            android:gravity="center_vertical|right"
+            android:src="@drawable/enter_into" />
+    </RelativeLayout>
+
+    
+     </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

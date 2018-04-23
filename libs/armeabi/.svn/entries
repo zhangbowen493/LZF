@@ -1,0 +1,41 @@
+8
+
+dir
+118
+https://172.16.31.122/svn/WondersPay-Android/branches/source-eclipse/developers-zbw-chakan/libs/armeabi
+https://172.16.31.122/svn/WondersPay-Android
+
+
+
+2016-03-22T05:55:08.615501Z
+51
+dingle
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+ccab8fb8-b3c6-e44b-b722-937c6cf4e6c0
+
+libPassGuard.so
+file
+
+
+
+
+2016-04-15T06:57:23.187000Z
+0121e5218b30a3787a4560c7a4224497
+2016-03-22T05:55:08.615501Z
+51
+dingle
+has-props
+

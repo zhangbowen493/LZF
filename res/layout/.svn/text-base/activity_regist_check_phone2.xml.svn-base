@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:fitsSystemWindows="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_bg" >
+
+        <include
+            android:id="@+id/act_top"
+            layout="@layout/activity_title" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/act_top" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/activity_rl_regist_nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_marginTop="@dimen/widget_mt"
+                    android:background="@drawable/gray_box_bg"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/widget_ml_big"
+                        android:text="@string/login_pl_input_nickname"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/activity_edt_regist_check_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/widget_ml"
+                        android:layout_toRightOf="@+id/textView"
+                        android:background="@color/transparent"
+                        android:ems="10"
+                        android:gravity="center_vertical|left"
+                        android:hint="@string/login_pl_input_nickname"
+                        android:inputType="text"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:textColorHint="@color/gray_tv_cl"
+                        android:textSize="@dimen/tv_size" >
+
+                        <requestFocus />
+                    </EditText>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/activity_rl_regist_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_marginTop="@dimen/widget_mt"
+                    android:background="@drawable/gray_box_bg"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/activity_edt_regist_check_login_password_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/widget_ml_big"
+                        android:text="@string/regist_input_password"
+                        android:textColor="@color/black" />
+
+                    <cn.passguard.PassGuardEdit
+                        android:id="@+id/activity_edt_regist_check_login_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/widget_ml"
+                        android:layout_toRightOf="@+id/activity_edt_regist_check_login_password_title"
+                        android:background="@color/transparent"
+                        android:ems="10"
+                        android:gravity="center_vertical|left"
+                        android:hint="@string/regist_input_password_hint"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textColorHint="@color/gray_tv_cl"
+                        android:textSize="@dimen/tv_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50.0dip"
+                    android:background="@drawable/gray_box_bg"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/activity_edt_regist_check_login_password_again_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/widget_ml_big"
+                        android:text="@string/regist_confirm_password"
+                        android:textColor="@color/black" />
+
+                    <cn.passguard.PassGuardEdit
+                        android:id="@+id/activity_edt_regist_check_login_password_again"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/widget_ml"
+                        android:layout_toRightOf="@+id/activity_edt_regist_check_login_password_again_title"
+                        android:background="@color/transparent"
+                        android:ems="10"
+                        android:gravity="center_vertical|left"
+                        android:hint="@string/regist_input_password_hint"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textColorHint="@color/gray_tv_cl"
+                        android:textSize="@dimen/tv_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/activity_rl_regist_password_again"
+                    android:layout_width="match_parent"
+                    android:layout_height="50.0dip"
+                    android:layout_marginTop="@dimen/widget_mt"
+                    android:background="@drawable/gray_box_bg"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/activity_edt_regist_check_pay_password_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/widget_ml_big"
+                        android:text="@string/regist_input_pay_password"
+                        android:textColor="@color/black" />
+
+                    <cn.passguard.PassGuardEdit
+                        android:id="@+id/activity_edt_regist_check_pay_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/widget_ml"
+                        android:layout_toRightOf="@+id/activity_edt_regist_check_pay_password_title"
+                        android:background="@color/transparent"
+                        android:ems="10"
+                        android:hint="@string/regist_input_password_hint"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textColorHint="@color/gray_tv_cl"
+                        android:textSize="@dimen/tv_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50.0dip"
+                    android:background="@drawable/gray_box_bg"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/activity_edt_regist_check_pay_password_again_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/widget_ml_big"
+                        android:text="@string/regist_confirm_password"
+                        android:textColor="@color/black" />
+
+                    <cn.passguard.PassGuardEdit
+                        android:id="@+id/activity_edt_regist_check_pay_password_again"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/widget_ml"
+                        android:layout_toRightOf="@+id/activity_edt_regist_check_pay_password_again_title"
+                        android:background="@color/transparent"
+                        android:ems="10"
+                        android:hint="@string/regist_input_password_hint"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textColorHint="@color/gray_tv_cl"
+                        android:textSize="@dimen/tv_size" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/gray_box_bg"
+                    android:orientation="vertical"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edittext_high"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/widget_ml_big"
+                            android:layout_weight="1"
+                            android:text="问题一"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/act_sp_regist_questions_list_1"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/edittext_high"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/widget_ml_low"
+                            android:layout_marginRight="@dimen/widget_ml_low"
+                            android:layout_toRightOf="@+id/textView22"
+                            android:layout_weight="3.5"
+                            android:background="@drawable/enter_down"
+                            android:textColor="@color/black"
+                            android:text="你的出生地？"/>
+                        <!--
+                         <Spinner
+                        android:id="@+id/act_sp_regist_questions_list_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edittext_high"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/widget_ml_low"
+                        android:layout_marginRight="@dimen/widget_ml_low"
+                        android:layout_toRightOf="@+id/textView22"
+                        android:background="@drawable/enter_down"
+
+                        -->
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginTop="6dp"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="3.5"
+                            android:background="@color/gray_border" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edittext_high"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/textView222"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/widget_ml_big"
+                            android:layout_weight="1"
+                            android:text="答案"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/act_edt_regist_solution_1"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/widget_ml_low"
+                            android:layout_marginRight="@dimen/widget_ml_low"
+                            android:layout_weight="3.5"
+                            android:background="@color/transparent"
+                            android:ems="10"
+                            android:gravity="center_vertical|left"
+                            android:hint="请输入密保答案"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:textColorHint="@color/gray_tv_cl"
+                            android:textSize="@dimen/tv_size" >
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/gray_box_bg"
+                    android:orientation="vertical"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edittext_high" >
+
+                        <TextView
+                            android:id="@+id/textView223"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/widget_ml_big"
+                            android:layout_weight="1"
+                            android:text="问题二"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/act_sp_regist_questions_list_2"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/edittext_high"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/widget_ml_low"
+                            android:layout_marginRight="@dimen/widget_ml_low"
+                            android:layout_toRightOf="@+id/textView223"
+                            android:layout_weight="3.5"
+                            android:background="@drawable/enter_down"
+                            android:spinnerMode="dialog"
+                            android:textColor="@color/black"
+                            android:text="你父亲的生日是？" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginTop="6dp"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1"
+                            android:background="@color/white" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="3.5"
+                            android:background="@color/gray_border" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edittext_high" >
+
+                        <TextView
+                            android:id="@+id/textView22232"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/widget_ml_big"
+                            android:layout_weight="1"
+                            android:text="答案"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/act_edt_regist_solution_2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/widget_ml_low"
+                            android:layout_marginRight="@dimen/widget_ml_low"
+                            android:layout_toRightOf="@+id/textView22232"
+                            android:layout_weight="3.5"
+                            android:background="@color/transparent"
+                            android:ems="10"
+                            android:gravity="center_vertical|left"
+                            android:hint="请输入密保答案"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:textColorHint="@color/gray_tv_cl"
+                            android:textSize="@dimen/tv_size" >
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/activity_regist_check_btn_regist"
+                    style="@style/MyButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/widget_mt_big"
+                    android:layout_marginTop="@dimen/widget_mt"
+                    android:textSize="15dp"
+                    android:text="注 册" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

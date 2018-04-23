@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/core
+END
+TitleView.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/core/TitleView.java
+END
+StringUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/core/StringUtils.java
+END
+RGBLuminanceSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/core/RGBLuminanceSource.java
+END
+ViewfinderView.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/core/ViewfinderView.java
+END
+ViewfinderResultPointCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/core/ViewfinderResultPointCallback.java
+END
+DecodeFormatManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/core/DecodeFormatManager.java
+END
+FinishListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/core/FinishListener.java
+END
+Intents.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/core/Intents.java
+END
+InactivityTimer.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/core/InactivityTimer.java
+END
+DecodeHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/core/DecodeHandler.java
+END
+DecodeThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/core/DecodeThread.java
+END
+QRCodeReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/core/QRCodeReader.java
+END
+CaptureActivityHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/sitech/oncon/barcode/core/CaptureActivityHandler.java
+END

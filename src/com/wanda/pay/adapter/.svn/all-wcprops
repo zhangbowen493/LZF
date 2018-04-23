@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/src/com/wanda/pay/adapter
+END
+QuestionsAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/wanda/pay/adapter/QuestionsAdapter.java
+END
+CardListAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/WondersPay-Android/!svn/ver/117/branches/source-eclipse/developers-zbw-chakan/src/com/wanda/pay/adapter/CardListAdapter.java
+END
+BankListAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/WondersPay-Android/!svn/ver/74/branches/source-eclipse/developers-zbw-chakan/src/com/wanda/pay/adapter/BankListAdapter.java
+END
+TransactionRecordListAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/WondersPay-Android/!svn/ver/89/branches/source-eclipse/developers-zbw-chakan/src/com/wanda/pay/adapter/TransactionRecordListAdapter.java
+END

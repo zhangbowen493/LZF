@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/act_top"
+        layout="@layout/activity_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        
+          <!--  -->  
+            <TextView
+                android:id="@+id/tv_act_fta_blance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widget_mt"
+                android:text="账户：13274832374\n余额：9999.08元"
+                android:layout_marginLeft="@dimen/widget_ml_big"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="@dimen/tv_size_high" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_high"
+                android:layout_marginTop="@dimen/widget_mt"
+                android:background="@drawable/gray_box_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|right"
+                    android:text="转账金额"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tv_size" />
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/edt_act_fta_money"
+                        android:layout_width="0.0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/widget_ml"
+                        android:layout_weight="7"
+                        android:background="@color/transparent"
+                        android:digits="1234567890"
+                        android:ems="10"
+                        android:gravity="center_vertical|left"
+                        android:hint="请输入金额/元"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray_tv_cl"
+                        android:textSize="@dimen/tv_size" >
+
+                        <requestFocus />
+                    </EditText>
+                    <!-- android:hint="请输入金额/分" -->
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:paddingRight="@dimen/widget_ml"
+                        android:text="/元"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/tv_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/scan_choice_bank_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_high"
+                android:background="@drawable/scan_choice_bank_click"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|right"
+                    android:text="收款帐号"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tv_size" />
+
+                 <EditText
+                        android:id="@+id/edt_act_fta_account_receive"
+                        android:layout_width="0.0dip"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/widget_ml"
+                        android:layout_weight="7"
+                        android:background="@color/transparent"
+                        android:digits="1234567890"
+                        android:ems="10"
+                        android:gravity="center_vertical|left"
+                        android:hint="收款方登陆账号"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray_tv_cl"
+                        android:textSize="@dimen/tv_size" >
+
+                        <requestFocus />
+                    </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_high"
+                android:background="@drawable/gray_box_bg"
+                android:layout_marginTop="@dimen/widget_mt"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/regist_input_pay_password"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tv_size" />
+
+                <cn.passguard.PassGuardEdit
+                    android:id="@+id/edt_act_fta_pay_password"
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/widget_ml"
+                    android:layout_weight="7"
+                    android:background="@color/transparent"
+                    android:ems="10"
+                    android:gravity="center_vertical|left"
+                    android:hint="@string/login_pl_input_pay_password"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray_tv_cl"
+                    android:textSize="@dimen/tv_size" >
+
+                </cn.passguard.PassGuardEdit>
+            </LinearLayout>
+            
+            <Button
+                android:id="@+id/btn_act_fta_commit"
+                style="@style/MyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widget_mt"
+                android:text="转  账" />
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/act_top"
+        layout="@layout/activity_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/widget_mt"
+        android:background="@drawable/gray_box_bg"
+        android:gravity="center_vertical"
+        android:minHeight="100dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/widget_ml_big"
+        android:paddingRight="@dimen/widget_ml_big" >
+
+        <ImageView
+            android:id="@+id/scan_goods_imageview"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/ic_launcher"
+            android:scaleType="center"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/scan_goods_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size" />
+
+        <TextView
+            android:id="@+id/scan_goods_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/scan_goods_getmoney_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/gray_box_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/widget_ml_big"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/tv_size"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/scan_choice_bank_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittext_high"
+        android:background="@drawable/scan_choice_bank_click"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/widget_ml_big" >
+
+        <ImageView
+            android:id="@+id/scan_cardbank_imageview"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/flash_open"
+            android:scaleType="center"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/scan_cardbank_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:text="添加银行卡"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tv_size" />
+
+        <TextView
+            android:id="@+id/scan_cardbank_jiantou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/jiantou_down" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/scan_sure_pay_button"
+        style="@style/MyButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/widget_ml"
+        android:layout_marginRight="@dimen/widget_ml"
+        android:layout_marginTop="40dp"
+        android:text="确认支付"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>

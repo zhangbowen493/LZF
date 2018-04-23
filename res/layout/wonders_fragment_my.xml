@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_banner" >
+
+                <ImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/photo_newskin" />
+
+                <TextView
+                    android:id="@+id/tv_phonenumber_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="15dp"
+                    android:text="1851****168"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="6dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:paddingTop="6dp" >
+
+                <TextView
+                    android:id="@+id/tv_money_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00.00"
+                    android:textColor="#F96268"
+                    android:textSize="26sp" />
+
+                <ImageView
+                    android:id="@+id/iv_yue"
+                    android:layout_width="@dimen/fragment_my_measure_imageview"
+                    android:layout_height="@dimen/fragment_my_measure_imageview"
+                    android:layout_alignLeft="@+id/tv_money_balance"
+                    android:layout_below="@+id/tv_money_balance"
+                    android:src="@drawable/icon_yue_newskin" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_yue"
+                    android:layout_toRightOf="@+id/iv_yue"
+                    android:paddingLeft="7dp"
+                    android:text="账户余额"
+                    android:textSize="10sp" />
+
+                <ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:src="@drawable/selector_fragment_my_eye" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#F7F7F7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_recharge"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_fragment_my_buttom_background"
+                    android:drawableTop="@drawable/icon_my_chongzhi_newskin"
+                    android:paddingTop="4dp"
+                    android:text="充值"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btn_deposit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_fragment_my_buttom_background"
+                    android:drawableTop="@drawable/icon_my_tixian_newskin"
+                    android:paddingTop="4dp"
+                    android:text="提现"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btn_transfer"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_fragment_my_buttom_background"
+                    android:drawableTop="@drawable/icon_my_zhuanzhang_newskin"
+                    android:paddingTop="4dp"
+                    android:text="转账"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:background="#F7F7F7" />
+
+            <RelativeLayout
+                android:id="@+id/ll_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_fragment_my_buttom_background"
+                android:clickable="true"
+                android:paddingBottom="@dimen/fragment_my_padding_up_down"
+                android:paddingLeft="@dimen/fragment_my_margin_imageview"
+                android:paddingTop="@dimen/fragment_my_padding_up_down" >
+
+                <RelativeLayout
+                    android:id="@+id/imageView1"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_my_name_newskin" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:text="昵称" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/fragment_my_margin_right_imageview"
+                    android:src="@drawable/icon_my_right_newskin" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/fragment_my_margin_pictotext"
+                    android:layout_toLeftOf="@+id/imageView2"
+                    android:text="小猪"
+                    android:textColor="@color/blue" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#F7F7F7" />
+
+            <RelativeLayout
+                android:id="@+id/ll_phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_fragment_my_buttom_background"
+                android:clickable="true"
+                android:paddingBottom="@dimen/fragment_my_padding_up_down"
+                android:paddingLeft="15dp"
+                android:paddingTop="@dimen/fragment_my_padding_up_down" >
+
+                <RelativeLayout
+                    android:id="@+id/iv_bindphone"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_my_phone_newskin" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_bindphone2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/fragment_my_margin_right_imageview"
+                    android:src="@drawable/icon_my_right_newskin" />
+
+                <TextView
+                    android:id="@+id/tv_phonenumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/fragment_my_margin_pictotext"
+                    android:layout_toLeftOf="@+id/iv_bindphone2"
+                    android:text="185****168"
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/tv_bindphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_phonenumber"
+                    android:layout_alignBottom="@+id/tv_phonenumber"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_bindphone"
+                    android:text="绑定手机" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:background="#F7F7F7" />
+
+            <RelativeLayout
+                android:id="@+id/ll_certification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_fragment_my_buttom_background"
+                android:clickable="true"
+                android:paddingBottom="@dimen/fragment_my_padding_up_down"
+                android:paddingLeft="15dp"
+                android:paddingTop="@dimen/fragment_my_padding_up_down" >
+
+                <ImageView
+                    android:id="@+id/iv_prove2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/fragment_my_margin_right_imageview"
+                    android:src="@drawable/icon_my_right_newskin" />
+
+                <TextView
+                    android:id="@+id/tv_prove2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/fragment_my_margin_pictotext"
+                    android:layout_toLeftOf="@+id/iv_prove2"
+                    android:text="立即认证"
+                    android:textColor="@color/blue" />
+
+                <RelativeLayout
+                    android:id="@+id/iv_prove"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_my_shimingrenz_newskin" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_prove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_prove"
+                    android:text="实名认证" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#F7F7F7" />
+
+            <RelativeLayout
+                android:id="@+id/ll_login_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_fragment_my_buttom_background"
+                android:clickable="true"
+                android:paddingBottom="@dimen/fragment_my_padding_up_down"
+                android:paddingLeft="15dp"
+                android:paddingTop="@dimen/fragment_my_padding_up_down" >
+
+                <RelativeLayout
+                    android:id="@+id/iv_changelogin"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_my_lock_newskin" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_changelogin2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/fragment_my_margin_right_imageview"
+                    android:src="@drawable/icon_my_right_newskin" />
+
+                <TextView
+                    android:id="@+id/tv_changelogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_changelogin"
+                    android:text="登录密码" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#F7F7F7" />
+
+            <RelativeLayout
+                android:id="@+id/ll_pay_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_fragment_my_buttom_background"
+                android:clickable="true"
+                android:paddingBottom="@dimen/fragment_my_padding_up_down"
+                android:paddingLeft="15dp"
+                android:paddingTop="@dimen/fragment_my_padding_up_down" >
+
+                <RelativeLayout
+                    android:id="@+id/iv_changepay"
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_my_zhifu_newskin" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/iv_changepay2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/fragment_my_margin_right_imageview"
+                    android:src="@drawable/icon_my_right_newskin" />
+
+                <TextView
+                    android:id="@+id/tv_changepay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_changepay"
+                    android:text="支付密码" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#F7F7F7" />
+
+            <RelativeLayout
+                android:id="@+id/ll_out_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_fragment_my_buttom_background_out"
+                android:clickable="true"
+                android:paddingBottom="@dimen/fragment_my_padding_up_down"
+                android:paddingTop="@dimen/fragment_my_padding_up_down" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingBottom="@dimen/fragment_my_padding_up_down"
+                    android:paddingTop="@dimen/fragment_my_padding_up_down"
+                    android:text="退出登录"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="14dp"
+                android:background="#F7F7F7" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

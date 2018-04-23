@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg" >
+
+    <include
+        android:id="@+id/act_top"
+        layout="@layout/activity_title" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/act_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/widget_mt_low" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_high"
+                android:background="@drawable/gray_box_bg" >
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/widget_ml"
+                    android:gravity="center_vertical"
+                    android:text="@string/user_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tv_size" />
+
+                <EditText
+                    android:id="@+id/act_edt_add_card_one_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/widget_ml"
+                    android:layout_toRightOf="@id/textview1"
+                    android:background="@color/transparent"
+                    android:ems="10"
+                    android:gravity="center_vertical|left"
+                    android:hint="@string/open_card_person_name"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray_tv_cl"
+                    android:textSize="@dimen/tv_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_high"
+                android:background="@drawable/gray_box_bg" >
+
+                <EditText
+                    android:id="@+id/act_edt_add_card_one_id_card_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/widget_ml"
+                    android:background="@color/transparent"
+                    android:ems="10"
+                    android:gravity="center_vertical|left"
+                    android:hint="@string/pl_putin_id_card_number"
+                    android:digits="0123456789Xx"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray_tv_cl"
+                    android:textSize="@dimen/tv_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_high"
+                android:layout_marginTop="@dimen/widget_mt"
+                android:background="@drawable/gray_box_bg" >
+
+                <TextView
+                    android:id="@+id/textview4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/widget_ml"
+                    android:gravity="center_vertical"
+                    android:text="@string/select_bank"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tv_size" />
+
+                <Spinner
+                    android:id="@+id/act_sp_add_card_bank_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edittext_high"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/widget_ml_low"
+                    android:layout_marginRight="@dimen/widget_ml_low"
+                    android:layout_toRightOf="@id/textview4"
+                    android:background="@drawable/enter_down"
+                    android:gravity="center"
+                    android:spinnerMode="dialog" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_high"
+                android:background="@drawable/gray_box_bg" >
+
+                <EditText
+                    android:id="@+id/act_edt_add_card_one_card_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/widget_ml"
+                    android:background="@color/transparent"
+                    android:ems="10"
+                    android:gravity="center_vertical|left"
+                    android:hint="@string/pl_putin_bank_card_number"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray_tv_cl"
+                    android:textSize="@dimen/tv_size" >
+
+                    <requestFocus />
+                </EditText>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_high"
+                android:layout_marginTop="@dimen/widget_mt"
+                android:background="@drawable/gray_box_bg" >
+
+                <TextView
+                    android:id="@+id/textview11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/widget_ml"
+                    android:gravity="center_vertical"
+                    android:text="@string/phone_number"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tv_size" />
+
+                <EditText
+                    android:id="@+id/act_edt_add_card_one_check_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/widget_ml"
+                    android:layout_toRightOf="@id/textview11"
+                    android:background="@color/transparent"
+                    android:ems="10"
+                    android:gravity="center_vertical|left"
+                    android:hint="@string/pl_putin_bank_check_phone"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray_tv_cl"
+                    android:textSize="@dimen/tv_size" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/act_btn_add_card_one_next"
+                style="@style/MyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widget_mt"
+                android:text="@string/next" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

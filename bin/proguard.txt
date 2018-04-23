@@ -1,0 +1,190 @@
+# view AndroidManifest.xml #generated:38
+-keep class android.test.InstrumentationTestRunner { <init>(...); }
+
+# view res/layout/act_financial_draw_money.xml #generated:229
+# view res/layout/act_financial_top_up.xml #generated:195
+# view res/layout/act_financial_transfer_accounf1.xml #generated:143
+# view res/layout/act_financial_transfer_account.xml #generated:205
+# view res/layout/activity_add_card_two.xml #generated:255
+# view res/layout/activity_add_card_two_two.xml #generated:266
+# view res/layout/activity_login.xml #generated:106
+# view res/layout/activity_regist_check_phone.xml #generated:135
+# view res/layout/activity_regist_check_phone.xml #generated:169
+# view res/layout/activity_regist_check_phone.xml #generated:208
+# view res/layout/activity_regist_check_phone.xml #generated:84
+# view res/layout/activity_regist_check_phone2.xml #generated:120
+# view res/layout/activity_regist_check_phone2.xml #generated:156
+# view res/layout/activity_regist_check_phone2.xml #generated:189
+# view res/layout/activity_regist_check_phone2.xml #generated:86
+# view res/layout/activity_set_pay_password.xml #generated:126
+# view res/layout/activity_set_pay_password.xml #generated:171
+# view res/layout/activity_set_pay_password.xml #generated:80
+# view res/layout/activity_set_pay_password1.xml #generated:115
+# view res/layout/activity_set_pay_password1.xml #generated:183
+# view res/layout/activity_set_pay_password1.xml #generated:52
+# view res/layout/activtiy_set_pay_password.xml #generated:39
+# view res/layout/activtiy_set_pay_password.xml #generated:71
+# view res/layout/fragment_add_card_two.xml #generated:216
+# view res/layout/fragment_login.xml #generated:84
+# view res/layout/scan_input_password_layout.xml #generated:58
+-keep class cn.passguard.PassGuardEdit { <init>(...); }
+
+# view res/layout/qr_code_scan.xml #generated:12
+-keep class com.google.zxing.view.ViewfinderView { <init>(...); }
+
+# view res/layout/capture.xml #generated:28
+-keep class com.sitech.oncon.barcode.core.ViewfinderView { <init>(...); }
+
+# view AndroidManifest.xml #generated:370
+-keep class com.umeng.update.UpdateDialogActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:365
+-keep class com.umeng.update.net.DownloadingService { <init>(...); }
+
+# view AndroidManifest.xml #generated:382
+-keep class com.wanda.pay.QuestionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:115
+-keep class com.wanda.pay.activity.AddBankCardSuccessfuActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:158
+-keep class com.wanda.pay.activity.AddCardOneActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:174
+-keep class com.wanda.pay.activity.AddCardThreeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:166
+-keep class com.wanda.pay.activity.AddCardTwoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:202
+-keep class com.wanda.pay.activity.BankCardManageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:150
+-keep class com.wanda.pay.activity.BankCenterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:279
+-keep class com.wanda.pay.activity.BankListPopupWindow { <init>(...); }
+
+# view AndroidManifest.xml #generated:347
+-keep class com.wanda.pay.activity.CameraOrCropActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:376
+-keep class com.wanda.pay.activity.CaptureActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:286
+-keep class com.wanda.pay.activity.DisplayingResultsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:293
+-keep class com.wanda.pay.activity.DisplayingResultsActivity1 { <init>(...); }
+
+# view AndroidManifest.xml #generated:300
+-keep class com.wanda.pay.activity.DisplayingResultsActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:244
+-keep class com.wanda.pay.activity.FinancialDrawMoneyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:251
+-keep class com.wanda.pay.activity.FinancialDrawMoneyActivity1 { <init>(...); }
+
+# view AndroidManifest.xml #generated:230
+-keep class com.wanda.pay.activity.FinancialTopUpActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:237
+-keep class com.wanda.pay.activity.FinancialTopUpActivity1 { <init>(...); }
+
+# view AndroidManifest.xml #generated:258
+-keep class com.wanda.pay.activity.FinancialTransferAccountActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:209
+-keep class com.wanda.pay.activity.FindPasswordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:64
+-keep class com.wanda.pay.activity.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:51
+-keep class com.wanda.pay.activity.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:72
+-keep class com.wanda.pay.activity.MainViewPagerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:80
+-keep class com.wanda.pay.activity.MyQuestionListViewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:223
+-keep class com.wanda.pay.activity.RealNameCertificationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:122
+-keep class com.wanda.pay.activity.RechargeSuccessfuActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:87
+-keep class com.wanda.pay.activity.RegisteredCheckPhoneActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:94
+-keep class com.wanda.pay.activity.RegisteredCheckPhoneActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:101
+-keep class com.wanda.pay.activity.RegisteredInputPhoneActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:108
+-keep class com.wanda.pay.activity.RegisteredSuccessfuActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:136
+-keep class com.wanda.pay.activity.RegisteredSuccessfuActivity1 { <init>(...); }
+
+# view AndroidManifest.xml #generated:307
+-keep class com.wanda.pay.activity.ScanPayMoneyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:265
+-keep class com.wanda.pay.activity.SelectBankCardActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:272
+-keep class com.wanda.pay.activity.SelectBankPopupWindow { <init>(...); }
+
+# view AndroidManifest.xml #generated:181
+-keep class com.wanda.pay.activity.ServiceAgreementActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:129
+-keep class com.wanda.pay.activity.SetNameActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:188
+-keep class com.wanda.pay.activity.SetPasswordActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:195
+-keep class com.wanda.pay.activity.SetPasswordActivity1 { <init>(...); }
+
+# view AndroidManifest.xml #generated:340
+-keep class com.wanda.pay.activity.TransactionDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:314
+-keep class com.wanda.pay.activity.TransactionRecordsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:143
+-keep class com.wanda.pay.activity.UpdatePayPwdSuccessfuActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:216
+-keep class com.wanda.pay.activity.UserCenterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:321
+-keep class com.wanda.pay.activity.WbeVeiwActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:328
+-keep class com.wanda.pay.activity.wanDa_Pay_Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:45
+-keep class com.wanda.pay.app.WDApplication { <init>(...); }
+
+# view res/layout/wonders_fragment_main.xml #generated:12
+-keep class com.wanda.pay.layout.PercentFrameLayout { <init>(...); }
+
+# view res/layout/activity_camera_or_crop.xml #generated:13
+-keep class com.wanda.pay.view.CropImageView { <init>(...); }
+
+# view res/layout/wonders_view_cycle_viewpager_contet.xml #generated:12
+-keep class com.wonders.pay.viewpager.BaseViewPager { <init>(...); }
+
+# view res/layout/wonders_fragment_main.xml #generated:354
+-keep class com.wonders.pay.viewpager.CycleViewPager { <init>(...); }
+
+# view res/layout/wonders_activity_home.xml #generated:7
+-keep class com.wonders.pay.viewpager.PayViewPager { <init>(...); }
+

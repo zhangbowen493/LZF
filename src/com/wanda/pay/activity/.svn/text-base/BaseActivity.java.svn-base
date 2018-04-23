@@ -1,0 +1,281 @@
+package com.wanda.pay.activity;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.json.JSONObject;
+
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.nostra13.universalimageloader.core.assist.ImageScaleType;
+import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
+import com.umeng.analytics.MobclickAgent;
+import com.wanda.pay.R;
+import com.wanda.pay.R.drawable;
+import com.wanda.pay.app.WDApplication;
+import com.wanda.pay.bean.Constant_data;
+import com.wanda.pay.bean.UserBean;
+import com.wanda.pay.dialog.CustomProgressDialog;
+import com.wanda.pay.util.ApiClient;
+import com.wanda.pay.util.JSONParsing;
+import com.wanda.pay.util.Result;
+import com.wanda.pay.util.SPUtils;
+import com.wanda.pay.util.ScreenManager;
+import com.wanda.pay.util.ToastUtil;
+
+import android.app.Activity;
+import android.app.ActivityManager;
+import android.app.ActivityManager.RunningTaskInfo;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.view.WindowManager;
+import android.widget.Toast;
+
+/**
+ * 基础Activity 处理堆栈页面销毁关闭处理 以及其它处理
+ *   
+ * @author kevin
+ * 
+ */
+public class BaseActivity extends Activity {
+
+	private WDApplication mApplication;// 堆栈管理工具
+	public ImageLoader loader;
+	public DisplayImageOptions options;
+	private CheckLoginTask checkLoginTask;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		
+		getWindow().addFlags(WindowManager.LayoutParams.FLAG_SECURE);//防止屏幕截屏
+
+		mApplication = WDApplication.getInstance();
+		mApplication.mScreenManager = ScreenManager.getScreenManager();
+		mApplication.mScreenManager.pushActivity(this);
+
+		initLoader();
+	}
+
+	public void onResume() {
+		MobclickAgent.onResume(this);
+		super.onResume();
+	}
+
+	public void onPause() {
+		super.onPause();
+		MobclickAgent.onPause(this);
+	}
+
+	@Override
+	protected void onRestart() {
+		// TODO Auto-generated method stub
+		super.onRestart();
+		boolean isCurrentRunningForeground = (Boolean) SPUtils.get(
+				BaseActivity.this, Constant_data.ISCURRENTRUNNINGFOREGROUND,
+				false);// SharedPreferenceUtil.getBoolValue1(BaseActivity.this,
+						// Constant.preferencesName,
+						// Constant.ISCURRENTRUNNINGFOREGROUND);
+
+		
+		String topActivityClassName = getTopActivityName(this);
+		
+		if (!isCurrentRunningForeground && !(topActivityClassName.endsWith("LoginActivity")
+				||topActivityClassName.endsWith("RegisteredInputPhoneActivity")
+				||topActivityClassName.endsWith("RegisteredCheckPhoneActivity"))) {
+			// Toast.makeText(getApplicationContext(), "请输入手势密码",
+			// Toast.LENGTH_SHORT)
+			// .show();
+
+//			ToastUtil.showShort(this, topActivityClassName);
+			
+			 CheckLoginTime();
+		}
+	}
+	
+	public boolean isRunningMyForeground() {
+		String packageName = getPackageName(this);
+		String topActivityClassName = getTopActivityName(this);
+		if(topActivityClassName.endsWith("LoginActivity")||topActivityClassName.endsWith("RegisteredInputPhoneActivity")||topActivityClassName.endsWith("RegisteredCheckPhoneActivity")){
+			return false;
+		}
+		if (packageName != null && topActivityClassName != null
+				&& topActivityClassName.startsWith(packageName)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	/**
+	 * 验证登录时效
+	 */
+	private void CheckLoginTime() {
+		// TODO Auto-generated method stub
+		UserBean userBean = WDApplication.getInstance().getUserBean();
+		if (userBean != null) {
+			checkLoginTask = new CheckLoginTask();
+			checkLoginTask.execute();
+			CustomProgressDialog.showProgressDialog(BaseActivity.this, "用户超时验证");
+		}
+	}
+
+	@Override
+	protected void onStop() {
+		// TODO Auto-generated method stub
+		super.onStop();
+		try {
+			Thread.sleep(1000);
+			new Thread() {
+				public void run() {
+					boolean isCurrentRunningForeground = isRunningForeground();
+					SPUtils.put(BaseActivity.this,
+							Constant_data.ISCURRENTRUNNINGFOREGROUND,
+							isCurrentRunningForeground);
+				};
+			}.start();
+		} catch (Exception e) {
+		}
+	}
+
+	public boolean isRunningForeground() {
+		String packageName = getPackageName(this);
+		String topActivityClassName = getTopActivityName(this);
+		if (packageName != null && topActivityClassName != null
+				&& topActivityClassName.startsWith(packageName)
+				
+				) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public String getTopActivityName(Context context) {
+		String topActivityClassName = null;
+		ActivityManager activityManager = (ActivityManager) (context
+				.getSystemService(android.content.Context.ACTIVITY_SERVICE));
+		// android.app.ActivityManager.getRunningTasks(int maxNum)
+		// int maxNum--->The maximum number of entries to return in the list
+		// 即最多取得的运行中的任务信息(RunningTaskInfo)数量
+		List runningTaskInfos = activityManager.getRunningTasks(1);
+		if (runningTaskInfos != null) {
+			// ComponentName f = runningTaskInfos.get(0).topActivity;
+			RunningTaskInfo taskInfo = (RunningTaskInfo) runningTaskInfos
+					.get(0);
+			ComponentName f = taskInfo.topActivity;
+			topActivityClassName = f.getClassName();
+		}
+		// 按下Home键盘后 topActivityClassName=com.android.launcher2.Launcher
+		return topActivityClassName;
+	}
+
+	public String getPackageName(Context context) {
+		String packageName = context.getPackageName();
+		return packageName;
+	}
+
+	/**
+	 * 初始化imageloader 工具 用于加载网络图片
+	 */
+	private void initLoader() {
+		loader = ImageLoader.getInstance();
+		ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(
+				this).discCacheFileCount(50)
+				.threadPriority(Thread.NORM_PRIORITY - 2)
+				.denyCacheImageMultipleSizesInMemory().build();
+
+		loader.init(config);
+
+		options = new DisplayImageOptions.Builder()
+				.showImageForEmptyUri(R.drawable.ic_launcher)
+				.showImageOnFail(R.drawable.ic_launcher)
+				.resetViewBeforeLoading(true).cacheOnDisc(true)
+				.imageScaleType(ImageScaleType.EXACTLY)
+				.considerExifParams(true)
+				.displayer(new FadeInBitmapDisplayer(20)).build();
+
+	}
+
+	/**
+	 * 用户登出
+	 * 
+	 * @author kevin
+	 * 
+	 */
+	private class CheckLoginTask extends AsyncTask<String, Void, Boolean> {
+		String strError;
+		Exception exception;
+		private Result loginResult;
+
+		@Override
+		protected Boolean doInBackground(String... prams) {
+			// TODO Auto-generated method stub
+			try {
+				UserBean userBean = WDApplication.getInstance().getUserBean();
+				if (userBean != null) {
+					Map<String, Object> pramsMap = new HashMap<String, Object>();
+					pramsMap.put("loginToken", userBean.getmLoginToken());
+					loginResult = ApiClient.CheckLogin(BaseActivity.this,
+							pramsMap);
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+				exception = e;
+			}
+			return loginResult != null;
+		}
+
+		@Override
+		protected void onPostExecute(Boolean result) {
+			CustomProgressDialog.hideProgressDialog();
+			if (exception != null) {
+				Toast.makeText(getApplicationContext(), "网络异常，请重试!",
+						Toast.LENGTH_LONG).show();
+				return;
+			}
+			if (result) {
+				if (Constant_data.HTTP_SUCCESS.equals(loginResult.coder)) {
+//					loginResult.jsonBodyObject
+					Map<String, String> checkLoinTime = JSONParsing.CheckLoinTime(loginResult.jsonBodyObject);
+					
+					if("YES".equals(checkLoinTime.get("isLoginTimeOut"))){
+						WDApplication.getInstance().setUserBean(null);
+						Intent intent;
+						intent = new Intent(BaseActivity.this, LoginActivity.class);
+						intent.putExtra("isCheck", true);
+						startActivity(intent);
+					}else{
+						UserBean mUserBean = JSONParsing
+								.GetUserInfo(loginResult.jsonBodyObject);
+						if (mUserBean != null) {
+							WDApplication.getInstance().setUserBean(mUserBean);
+							SPUtils.put(BaseActivity.this, Constant_data.sp_key_loginToken, mUserBean.getmLoginToken());
+						}
+						
+					}
+				} else {
+					Intent toLoginIntent = new Intent(BaseActivity.this,
+							LoginActivity.class);
+					startActivity(toLoginIntent);
+				}
+			} else {
+				ToastUtil.showShort(BaseActivity.this, strError);
+			}
+			super.onPostExecute(result);
+		}
+
+		@Override
+		protected void onCancelled() {
+			checkLoginTask = null;
+			super.onCancelled();
+		}
+
+	}
+}

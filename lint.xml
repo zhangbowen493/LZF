@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ObsoleteLayoutParam" severity="ignore" />
+    <issue id="RtlHardcoded" severity="ignore">
+        <ignore path="res/layout/act_financial_top_up.xml" />
+    </issue>
+    <issue id="SimpleDateFormat" severity="ignore" />
+</lint>

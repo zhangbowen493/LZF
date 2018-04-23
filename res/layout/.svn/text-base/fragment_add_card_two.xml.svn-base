@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg" >
+
+    <include
+        android:id="@+id/act_top"
+        layout="@layout/activity_title" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/act_top" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_high"
+                android:background="@drawable/gray_box_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/user_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tv_size" />
+
+                <TextView
+                    android:id="@+id/act_tv_add_card_two_name"
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/widget_ml"
+                    android:layout_weight="7"
+                    android:gravity="center_vertical|left"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tv_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_high"
+                android:background="@drawable/gray_box_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/user_id_card_number_tv"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tv_size" />
+
+                <TextView
+                    android:id="@+id/act_tv_add_card_two_id_card_number"
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/widget_ml"
+                    android:layout_weight="7"
+                    android:gravity="center_vertical|left"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tv_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_high"
+                android:background="@drawable/gray_box_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/bank_card_type"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tv_size" />
+
+                <TextView
+                    android:id="@+id/act_tv_add_card_two_card_type"
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/widget_ml"
+                    android:layout_weight="7"
+                    android:gravity="center_vertical|left"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tv_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_high"
+                android:background="@drawable/gray_box_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/bank_card_number_tv"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tv_size" />
+
+                <TextView
+                    android:id="@+id/act_tv_add_card_two_card_number"
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/widget_ml"
+                    android:layout_weight="7"
+                    android:gravity="center_vertical|left"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tv_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_high"
+                android:layout_marginTop="@dimen/widget_mt"
+                android:background="@drawable/gray_box_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/check_code_tv"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tv_size" />
+
+                <LinearLayout 
+                    android:layout_width="0.0dip"
+                    android:layout_weight="7"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                <EditText
+                    android:id="@+id/act_edt_add_card_two_check_code"
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/widget_ml"
+                    android:layout_weight="7"
+                    android:background="@color/transparent"
+                    android:ems="10"
+                    android:gravity="center_vertical|left"
+                    android:hint="请输入金额/分"
+                    android:digits="1234567890"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray_tv_cl"
+                    android:textSize="@dimen/tv_size" >
+
+                    <requestFocus />
+                </EditText>
+<!--                     android:hint="请输入金额/分" -->
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tv_size"
+                    android:text="/分" />
+
+                <ImageButton
+                    android:id="@+id/act_ibtn_add_two_instructions"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/widget_ml_low"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/widget_ml"
+                   android:background="@drawable/image_button_prompt_select_bg"
+                    android:contentDescription="@string/img"/>
+                
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_high"
+                android:background="@drawable/gray_box_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/regist_input_pay_password"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tv_size" />
+
+                <cn.passguard.PassGuardEdit
+                    android:id="@+id/act_edt_add_card_two_pay_password"
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/widget_ml"
+                    android:layout_weight="7"
+                    android:background="@color/transparent"
+                    android:ems="10"
+                    android:gravity="center_vertical|left"
+                    android:hint="@string/login_pl_input_pay_password"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/gray_tv_cl"
+                    android:textSize="@dimen/tv_size" >
+
+                    <requestFocus />
+                </cn.passguard.PassGuardEdit>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <CheckBox
+                    android:id="@+id/act_cb_add_card_two_agreed"
+                    style="@style/myCBstyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/widget_ml_big"
+                    android:layout_marginTop="@dimen/widget_mt_low"
+                     />
+                <TextView 
+                    android:id="@+id/act_cb_add_card_two_agreed1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/act_cb_add_card_two_agreed"
+                    android:layout_alignTop="@+id/act_cb_add_card_two_agreed"
+                    android:layout_toRightOf="@+id/act_cb_add_card_two_agreed"
+                    android:gravity="center_vertical"
+                    android:text="@string/read_and_confirm"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/tv_size"
+                    />
+
+                <TextView
+                    android:id="@+id/act_tv_add_card_two_service_agreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/act_cb_add_card_two_agreed1"
+                    android:layout_alignTop="@+id/act_cb_add_card_two_agreed1"
+                    android:layout_toRightOf="@+id/act_cb_add_card_two_agreed1"
+                    android:gravity="center_vertical"
+                    android:text="@string/service_agreement"
+                    android:textColor="@color/blue_normal"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/act_btn_add_card_two_next"
+                style="@style/MyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/widget_mt"
+                android:text="@string/next" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/popupWindow_transaction_width"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rili"
+    android:paddingTop="@dimen/popupWindow_transaction_padding_top"
+    android:paddingBottom="@dimen/popupWindow_transaction_padding_buttom"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/pop_tv_transaction2_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/popupWindow_transaction_tv_height"
+        android:textSize="@dimen/tv_size_s"
+        android:textColor="@color/whiteSmoke_tv"
+        android:background="#1A9BFF"
+        android:gravity="center"
+        android:text="2016年03月" />
+    <TextView
+        android:id="@+id/pop_tv_transaction2_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/popupWindow_transaction_tv_height"
+        android:textSize="@dimen/tv_size_s"
+        android:textColor="@color/whiteSmoke_tv"
+        android:gravity="center"
+        android:text="2016年04月" />
+    <TextView
+        android:id="@+id/pop_tv_transaction2_3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/popupWindow_transaction_tv_height"
+        android:textSize="@dimen/tv_size_s"
+        android:textColor="@color/whiteSmoke_tv"
+        android:gravity="center"
+        android:text="2016年05月" />
+
+    <TextView
+        android:id="@+id/pop_tv_transaction2_4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/popupWindow_transaction_tv_height"
+        android:gravity="center"
+        android:text="2016年06月"
+        android:textColor="@color/whiteSmoke_tv"
+        android:textSize="@dimen/tv_size_s" />
+
+    <TextView
+        android:id="@+id/pop_tv_transaction2_5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/popupWindow_transaction_tv_height"
+        android:textSize="@dimen/tv_size_s"
+        android:textColor="@color/whiteSmoke_tv"
+        android:gravity="center"
+        android:text="2016年07月" />
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+8
+
+dir
+95
+https://172.16.31.122/svn/WondersPay-Android/branches/source-eclipse/developers-zbw-chakan
+https://172.16.31.122/svn/WondersPay-Android
+
+
+
+2016-04-19T02:23:37.525480Z
+95
+zhangbowen
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+incomplete
+ccab8fb8-b3c6-e44b-b722-937c6cf4e6c0
+
+AndroidManifest.xml
+file
+
+
+
+
+2016-04-19T02:29:52.947000Z
+698f99addcf89d0e5d45d8764014523c
+2016-04-19T02:23:37.525480Z
+95
+zhangbowen
+
+assets
+dir
+
+ic_launcher-web.png
+file
+94
+
+
+
+2016-04-15T06:57:36.992000Z
+03162f4ee138bcbae36f78b1d25dbd5b
+2016-03-07T07:03:36.300026Z
+9
+dingle
+has-props
+
+libs
+dir
+
+lint.xml
+file
+94
+
+
+
+2016-04-15T06:57:15.896000Z
+1ce274a186a2afb9f76542702f6ecc4d
+2016-03-07T07:04:57.513672Z
+10
+dingle
+
+proguard-project.txt
+file
+94
+
+
+
+2016-04-15T06:58:11.731000Z
+0530d04429f5c860e6c772122515baed
+2016-03-07T07:03:36.300026Z
+9
+dingle
+has-props
+
+project.properties
+file
+
+
+
+
+2016-04-15T06:57:15.766000Z
+0f8889c13781b7bcd9979c6ac511f7f6
+2016-04-19T02:23:37.525480Z
+95
+zhangbowen
+
+res
+dir
+
+src
+dir
+

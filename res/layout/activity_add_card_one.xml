@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:fitsSystemWindows="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_bg" >
+
+        <include
+            android:id="@+id/act_top"
+            layout="@layout/activity_title" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/act_top"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/widget_mt_low" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/gray_border" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gray_box_bg"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/widget_ml"
+                        android:layout_marginRight="3dp"
+                        android:contentDescription="@string/img"
+                        android:src="@drawable/bank_icon_card" />
+
+                    <EditText
+                        android:id="@+id/act_edt_add_card_one_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="@dimen/widget_ml"
+                        android:layout_toRightOf="@+id/imageView3"
+                        android:background="@color/transparent"
+                        android:ems="10"
+                        android:gravity="center_vertical|left"
+                        android:hint="@string/open_card_person_name"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray_tv_cl"
+                        android:textSize="@dimen/tv_size" />
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1.0dip"
+                        android:layout_alignLeft="@+id/act_edt_add_card_one_name"
+                        android:layout_below="@+id/act_edt_add_card_one_name"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gray_border" />
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignLeft="@+id/imageView3"
+                        android:layout_below="@+id/view2"
+                        android:contentDescription="@string/img"
+                        android:src="@drawable/bank_icon_card_number" />
+
+                    <EditText
+                        android:id="@+id/act_edt_add_card_one_id_card_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/view2"
+                        android:layout_below="@+id/view2"
+                        android:layout_toRightOf="@+id/imageView4"
+                        android:background="@color/transparent"
+                        android:digits="0123456789Xx"
+                        android:ems="10"
+                        android:gravity="center_vertical|left"
+                        android:hint="@string/pl_putin_id_card_number"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray_tv_cl"
+                        android:textSize="@dimen/tv_size" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/gray_border" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/widget_mt"
+                    android:background="@drawable/gray_box_bg"
+                    android:paddingBottom="10dp" >
+
+                    <View
+                        android:id="@+id/line_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1.0dip"
+                        android:background="@color/gray_border"
+                        android:layout_marginBottom="10dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/widget_ml"
+                        android:contentDescription="@string/img"
+                        android:layout_below="@+id/line_view"
+                        android:src="@drawable/bank_icon_bank" />
+
+
+                    <TextView
+                        android:id="@+id/act_sp_add_card_bank_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/widget_ml"
+                        android:layout_marginRight="@dimen/widget_ml_low"
+                        android:layout_toRightOf="@id/imageView5"
+                        android:background="@drawable/enter_down"
+                        android:text="请选择银行卡"
+                        android:textSize="@dimen/tv_size" />
+
+                <View
+                    android:id="@+id/line_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/act_sp_add_card_bank_list"
+                    android:layout_alignLeft="@+id/act_sp_add_card_bank_list"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/gray_border" />
+
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/line_view2"
+                        android:layout_alignLeft="@+id/imageView5"
+                        android:contentDescription="@string/img"
+                        android:src="@drawable/bank_icon_bank_number" />
+
+                    <EditText
+                        android:id="@+id/act_edt_add_card_one_card_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/line_view2"
+                        android:layout_below="@+id/line_view2"
+                        android:layout_toRightOf="@id/imageView6"
+                        android:background="@color/transparent"
+                        android:ems="10"
+                        android:gravity="center_vertical|left"
+                        android:hint="@string/pl_putin_bank_card_number"
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray_tv_cl"
+                        android:textSize="@dimen/tv_size" >
+
+                        <requestFocus />
+                    </EditText>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/gray_border" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/widget_mt"
+                    android:background="@drawable/gray_box_bg1"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp" >
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/widget_ml"
+                        android:contentDescription="@string/img"
+                        android:src="@drawable/bank_icon_phone_number" />
+
+                    <EditText
+                        android:id="@+id/act_edt_add_card_one_check_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/widget_ml"
+                        android:layout_toRightOf="@id/imageView7"
+                        android:background="@color/transparent"
+                        android:ems="10"
+                        android:gravity="center_vertical|left"
+                        android:hint="@string/pl_putin_bank_check_phone"
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray_tv_cl"
+                        android:textSize="@dimen/tv_size" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/widget_ml"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/lianzhifu"
+                    android:textColor="@color/tishi"
+                    android:textSize="10.0sp" />
+
+                <Button
+                    android:id="@+id/act_btn_add_card_one_next"
+                    style="@style/MyButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/widget_mt"
+                    android:text="@string/next" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>
